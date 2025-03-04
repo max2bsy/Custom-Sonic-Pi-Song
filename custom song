@@ -1,0 +1,218 @@
+use_bpm 85
+use_synth :piano
+
+boyismine = "C:/Users/maximilian_townsend/Downloads/Brandy & Monica - The Boy Is Mine (Album Version) [Official Audio].wav"
+
+sample boyismine
+
+sleep 5
+
+live_loop :maintrack do
+  play :a3
+  sleep 0.25
+  play :cs4
+  sleep 0.25
+  play :e4
+  sleep 0.25
+  play :gs4
+  sleep 0.25
+  play :e4
+  sleep 0.25
+  play :a3
+  sleep 0.25
+  play :cs4
+  sleep 0.25
+  play :a4
+  sleep 0.25
+  play :a3
+  sleep 0.25
+  play :e4
+  sleep 0.25
+  play :cs4
+  sleep 0.25
+  play :a3
+  sleep 0.25
+  play :cs4
+  sleep 0.25
+  play :fs3
+  sleep 0.25
+  play :fs4
+  sleep 0.25
+  play :a3
+  sleep 0.25
+  play :cs4
+  sleep 0.25
+  play :a3
+  sleep 0.25
+  play :e4
+  sleep 0.25
+  play :gs4
+  sleep 0.25
+  play :a3
+  sleep 0.25
+  play :a4
+  sleep 0.25
+  play :a3
+  sleep 0.25
+  play :e4
+  sleep 0.25
+  play :a3
+  sleep 0.25
+  play :cs4
+  sleep 0.25
+  play :fs3
+  sleep 0.25
+  play :a3
+  sleep 0.25
+  play :cs4
+  sleep 0.25
+  play :gs4
+  sleep 0.5
+  2.times do
+    play :gs3
+    sleep 0.25
+    play :b3
+    sleep 0.25
+    play :gs3
+    sleep 0.25
+    play :ds4
+    sleep 0.25
+  end
+  play :gs3
+  sleep 0.25
+  play :cs4
+  sleep 0.25
+  play :e4
+  play :gs3
+  sleep 0.25
+  play :gs3
+  sleep 0.25
+  play :fs4
+  sleep 0.25
+  play :gs3
+  sleep 0.25
+  play :ds4
+  sleep 0.25
+  play :b3
+  sleep 0.25
+  play :e4
+  sleep 0.25
+  play :b3
+  sleep 0.25
+  play :ds4
+  sleep 0.25
+  play :e4
+  #
+  sleep 0.25
+  play :gs4
+  sleep 0.25
+  play :ds4
+  sleep 0.25
+  play :e4
+  sleep 0.25
+  play :b3
+  sleep 0.25
+  play :e3
+  sleep 0.25
+  play :gs3
+  sleep 0.25
+  play :ds4
+  sleep 0.25
+  play :b3
+  sleep 0.25
+  play :gs4, sustain: 0.5
+  sleep 0.5
+  play :b4
+  sleep 0.25
+end
+
+sleep 31
+
+live_loop :background1 do
+  play :fs2, sustain: 1
+  sleep 1
+  play :fs1, sustain: 1
+  sleep 2
+  play :fs1, sustain: 1
+  sleep 1
+  play :fs2, sustain: 1
+  sleep 1
+  play :fs1, sustain: 1
+  sleep 2
+  play :gs1, sustain: 1
+  sleep 1
+  play :cs2, sustain: 1
+  sleep 1
+  play :cs1, sustain: 1
+  sleep 2
+  play :cs1, sustain: 1
+  sleep 1
+  play :cs2, sustain: 1
+  sleep 1
+  play :cs1, sustain: 1
+  sleep 2
+  play :e1, sustain: 1
+  
+  sleep 0.5
+end
+
+live_loop :background2 do
+  sleep 0.5
+  
+  play :fs3
+  sleep 1
+  play :gs3
+  sleep 1
+  play :a3
+  sleep 1
+  play :gs3
+  sleep 1
+  play :fs3
+  sleep 1
+  play :gs3
+  sleep 1
+  play :a3
+  sleep 1
+  play :gs3
+  sleep 1
+  play :cs3
+  sleep 1
+  play :ds3
+  sleep 1
+  play :e3
+  sleep 1
+  play :ds3
+  sleep 1
+  play :cs3
+  sleep 1
+  play :ds3
+  sleep 1
+  play :e3
+  sleep 1
+  play :ds3
+  
+end
+
+sleep 15.5
+
+live_loop :background3 do
+  play :cs4, sustain: 7.75
+  play :e4, sustain: 7.75
+  play :gs4, sustain: 7.75
+  sleep 7.5
+  play :cs4, sustain: 7.25
+  play :ds4, sustain: 7.25
+  
+  sleep 8
+end
+
+live_loop :background4 do
+  play :fs3, sustain: 7.5
+  sleep 7.5
+  play :cs3, sustain: 7.5
+  
+  sleep 8
+end
+
+
+
