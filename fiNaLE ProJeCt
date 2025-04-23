@@ -1,0 +1,327 @@
+use_bpm 85
+use_synth :piano
+
+mt = [:gs3,:b3,:gs3,:ds4]
+i = 0
+
+boyismine = "C:/Users/maximilian_townsend/Downloads/Brandy & Monica - The Boy Is Mine (Album Version) [Official Audio].wav"
+
+sample boyismine
+
+sleep 5
+
+live_loop :maintrack do
+  5.times do
+    play :a3
+    sleep 0.25
+    play :cs4
+    sleep 0.25
+    play :e4
+    sleep 0.25
+    play :gs4
+    sleep 0.25
+    play :e4
+    sleep 0.25
+    play :a3
+    sleep 0.25
+    play :cs4
+    sleep 0.25
+    play :a4
+    sleep 0.25
+    play :a3
+    sleep 0.25
+    play :e4
+    sleep 0.25
+    play :cs4
+    sleep 0.25
+    play :a3
+    sleep 0.25
+    play :cs4
+    sleep 0.25
+    play :fs3
+    sleep 0.25
+    play :fs4
+    sleep 0.25
+    play :a3
+    sleep 0.25
+    play :cs4
+    sleep 0.25
+    play :a3
+    sleep 0.25
+    play :e4
+    sleep 0.25
+    play :gs4
+    sleep 0.25
+    play :a3
+    sleep 0.25
+    play :a4
+    sleep 0.25
+    play :a3
+    sleep 0.25
+    play :e4
+    sleep 0.25
+    play :a3
+    sleep 0.25
+    play :cs4
+    sleep 0.25
+    play :fs3
+    sleep 0.25
+    play :a3
+    sleep 0.25
+    play :cs4
+    sleep 0.25
+    play :gs4
+    sleep 0.5
+    2.times do
+      i = 0
+      4.times do
+        play (mt[i])
+        sleep 0.25
+        i = i + 1
+      end
+    end
+    play :gs3
+    sleep 0.25
+    play :cs4
+    sleep 0.25
+    play :e4
+    play :gs3
+    sleep 0.25
+    play :gs3
+    sleep 0.25
+    play :fs4
+    sleep 0.25
+    play :gs3
+    sleep 0.25
+    play :ds4
+    sleep 0.25
+    play :b3
+    sleep 0.25
+    play :e4
+    sleep 0.25
+    play :b3
+    sleep 0.25
+    play :ds4
+    sleep 0.25
+    play :e4
+    #
+    sleep 0.25
+    play :gs4
+    sleep 0.25
+    play :ds4
+    sleep 0.25
+    play :e4
+    sleep 0.25
+    play :b3
+    sleep 0.25
+    play :e3
+    sleep 0.25
+    play :gs3
+    sleep 0.25
+    play :ds4
+    sleep 0.25
+    play :b3
+    sleep 0.25
+    play :gs4, sustain: 0.5
+    sleep 0.5
+    play :b4
+    sleep 0.25
+  end
+  stop
+end
+
+sleep 31
+
+live_loop :background1 do
+  3.times do
+    play :fs2, sustain: 1
+    sleep 1
+    play :fs1, sustain: 1
+    sleep 2
+    play :fs1, sustain: 1
+    sleep 1
+    play :fs2, sustain: 1
+    sleep 1
+    play :fs1, sustain: 1
+    sleep 2
+    play :gs1, sustain: 1
+    sleep 1
+    play :cs2, sustain: 1
+    sleep 1
+    play :cs1, sustain: 1
+    sleep 2
+    play :cs1, sustain: 1
+    sleep 1
+    play :cs2, sustain: 1
+    sleep 1
+    play :cs1, sustain: 1
+    sleep 2
+    play :e1, sustain: 1
+    
+    sleep 0.5
+  end
+  stop
+end
+
+live_loop :background2 do
+  3.times do
+    sleep 0.5
+    
+    play :fs3
+    sleep 1
+    play :gs3
+    sleep 1
+    play :a3
+    sleep 1
+    play :gs3
+    sleep 1
+    play :fs3
+    sleep 1
+    play :gs3
+    sleep 1
+    play :a3
+    sleep 1
+    play :gs3
+    sleep 1
+    play :cs3
+    sleep 1
+    play :ds3
+    sleep 1
+    play :e3
+    sleep 1
+    play :ds3
+    sleep 1
+    play :cs3
+    sleep 1
+    play :ds3
+    sleep 1
+    play :e3
+    sleep 1
+    play :ds3
+  end
+  stop
+end
+
+sleep 15.5
+
+live_loop :background3 do
+  2.times do
+    play :cs4, sustain: 7.75
+    play :e4, sustain: 7.75
+    play :gs4, sustain: 7.75
+    sleep 7.5
+    play :cs4, sustain: 7.25
+    play :ds4, sustain: 7.25
+    
+    sleep 8
+  end
+  stop
+end
+
+sleep 48
+
+#2 MILLION UP - PEEZY
+use_bpm 95
+use_synth :piano
+
+c=12*4
+
+as=(12*4)-2
+
+d=(12*4)+2
+
+ds=(12*4)+3
+
+f=(12*4)+5
+
+fs=(12*4)+6
+
+g=(12*4)+7
+
+x = 0.25
+
+live_loop :track1 do
+  #piano use array
+  play c
+  sleep 0.75
+  play c
+  sleep 0.5
+  play as
+  sleep 0.25
+  play c
+  sleep 1
+  play c
+  sleep 0.5
+  play ds
+  sleep 0.5
+  play c
+  sleep 0.5
+  play f
+  sleep 0.75
+  play f
+  sleep 0.5
+  play ds
+  sleep 0.25
+  play f
+  sleep 2
+  play f
+  sleep 0.25
+  play fs
+  sleep 0.25
+  play g
+  sleep 0.75
+  play g
+  sleep 0.5
+  play f
+  sleep 0.25
+  play g
+  sleep 1
+  play ds + 12
+  sleep 0.5
+  play d + 12
+  sleep 0.25
+  play c + 12
+  sleep 0.25
+  play ds
+  sleep 0.25
+  play d
+  sleep 0.25
+  play c
+  sleep 0.75
+  play c
+  sleep 0.5
+  play as
+  sleep 0.25
+  play c
+  sleep 2
+  play as + 12
+  sleep 0.25
+  play c + 12
+  sleep 0.25
+  #16 sleeps long
+end
+
+sleep 16
+
+live_loop :track2 do
+  #drums
+  sample :drum_bass_soft, amp: x
+  sleep 0.75
+  sample :drum_bass_soft, amp: x
+  sleep 0.25
+  sample :drum_snare_soft, amp: x
+  sleep 0.5
+  sample :drum_bass_soft, amp: x
+  sleep 1
+  sample :drum_bass_soft, amp: x
+  sleep 0.5
+  sample :drum_snare_soft, amp: x
+  sleep 1
+  x = x + 0.2
+end
+
+live_loop :track3 do
+  #cymbal
+  sample :drum_cymbal_closed, amp: 0.01
+  sleep 0.5
+end
